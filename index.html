@@ -17,7 +17,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,700;1,9..144,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-<!-- Shared stylesheet -->
 <link rel="stylesheet" href="style.css">
 
 </head>
@@ -26,10 +25,11 @@
 <header class="site-header">
   <a href="index.html" class="logo">Alexandros Mylonas</a>
   <nav>
-    <a href="#work">Work</a>
-    <a href="#about">About</a>
-    <a href="#cv">CV</a>
-    <a href="#contact">Contact</a>
+    <a href="works.html">Works</a>
+    <a href="exhibitions.html">Exhibitions</a>
+    <a href="news.html">News</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html">About</a>
   </nav>
 </header>
 
@@ -37,11 +37,7 @@
 
 <!-- ════════════════════════════════════════════════
      HERO — circular portrait + text
-     ════════════════════════════════════════════════
-     ΦΩΤΟΓΡΑΦΙΑ: images/portrait.jpg
-     Προτεινόμενες διαστάσεις: 1500x1500 (τετράγωνη — γίνεται κύκλος)
-     Μέχρι να ανέβει, εμφανίζεται διακοσμητικό φόντο.
--->
+     ════════════════════════════════════════════════ -->
 <section class="hero">
   <div class="hero-grid">
     <div class="hero-portrait empty">
@@ -50,7 +46,7 @@
 
     <div class="hero-content">
       <div class="hero-meta">
-        <span>Performance Artist</span>
+        <span>Artist</span>
         <span class="dot"></span>
         <span>Athens, Greece</span>
       </div>
@@ -59,10 +55,10 @@
         <em>Mylonas</em>
       </h1>
       <p class="hero-tagline">
-        Identity, overload, entropy.
+        Performance, Sculptures, Photography
       </p>
-      <a href="#work" class="hero-scroll">
-        Selected Work
+      <a href="#latest" class="hero-scroll">
+        Latest
         <span class="arrow">↓</span>
       </a>
     </div>
@@ -70,20 +66,13 @@
 </section>
 
 <!-- ════════════════════════════════════════════════
-     WORK — full-width cards
-     ════════════════════════════════════════════════
-     Κάθε δουλειά είναι ένα <article class="work-card">
-     Για να προσθέσεις νέα: αντιγράψε ένα ολόκληρο <article>
-     και άλλαξε τα στοιχεία.
--->
-<section id="work">
-  <div class="section-label">Selected Work</div>
+     LATEST WORK — single most recent
+     ════════════════════════════════════════════════ -->
+<section id="latest">
+  <div class="section-label">Latest Work</div>
 
-  <!-- ════════ ΕΡΓΟ 1: ABUNDANCE ════════ -->
   <a href="works/abundance.html" class="work-card">
     <div class="work-card__image empty">
-      <!-- Φωτογραφία cover: images/abundance-cover.jpg
-           Προτεινόμενες διαστάσεις: 2400x1400 (περίπου 17:10) -->
       <img src="images/abundance-cover.jpg" alt="Abundance — performance" onerror="this.style.display='none'">
     </div>
     <div class="work-card__content">
@@ -100,152 +89,63 @@
     </div>
   </a>
 
-  <!-- ════════ ΓΙΑ ΝΑ ΠΡΟΣΘΕΣΕΙΣ ΝΕΟ ΕΡΓΟ ════════
-       Αντιγράψε όλο το <article> ή <a class="work-card"> από πάνω,
-       άλλαξε τα στοιχεία (τίτλο, χρόνο, κείμενο, εικόνα),
-       και φτιάξε ένα νέο αρχείο works/[όνομα].html (αντιγραφή του abundance.html).
-  -->
+  <div style="margin-top: 2.5rem;">
+    <a href="works.html" class="hero-scroll">
+      All works
+      <span class="arrow">→</span>
+    </a>
+  </div>
+</section>
 
-  <!-- Παράδειγμα placeholder για μελλοντικό έργο — ΣΒΗΣΕ ΟΤΑΝ ΠΡΟΣΘΕΣΕΙΣ ΠΡΑΓΜΑΤΙΚΟ -->
-  <div class="work-card work-card--placeholder">
-    <div class="work-card__image work-card__image--empty-state">
-      <span>Next work</span>
-    </div>
-    <div class="work-card__content">
-      <div class="work-card__meta">
-        <span>Coming</span>
+<!-- ════════════════════════════════════════════════
+     LATEST NEWS — single most recent
+     ════════════════════════════════════════════════ -->
+<section id="latest-news">
+  <div class="section-label">Latest News</div>
+
+  <div class="news-list">
+    <a href="news/arte-laguna-first-selection.html" class="news-item">
+      <div class="news-item__date">2025</div>
+      <div>
+        <h3 class="news-item__title">First selection — Arte Laguna Prize 2025</h3>
+        <p class="news-item__excerpt">
+          <em>Abundance</em> selected for the first selection of the 20th edition of the Arte Laguna Prize, Venice.
+        </p>
       </div>
-      <h2>In progress</h2>
-      <p class="work-card__excerpt">
-        New work will appear here. Replace this placeholder with a copy of the work-card structure above.
-      </p>
-    </div>
+      <span class="news-item__link">Read <span class="arrow">→</span></span>
+    </a>
   </div>
 
-</section>
-
-<!-- ════════════════════════════════════════════════
-     ABOUT
-     ════════════════════════════════════════════════ -->
-<section id="about">
-  <div class="section-label">About</div>
-  <div class="about-grid">
-    <h2>The body as a site of <em>excess</em>.</h2>
-    <div class="about-text">
-      <p>
-        Alexandros Mylonas was born in Messolonghi in 1985 and lives and works in Athens. He studied Computer Engineering and serves in the Hellenic Air Force.
-      </p>
-      <p>
-        Since 2014, his practice has moved through acting — across theatre, film, and television — guided by a sustained interest in human expression and the body in performance. Since 2024, he has dedicated himself to the study and practice of performance art under the mentorship of visual artist <em>Sofia Stavrakakis</em>.
-      </p>
-      <p>
-        His work brings together physical presence, sculpture, and ritual to interrogate questions of collective identity, internal excavation, and transformation.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- ════════════════════════════════════════════════
-     CV
-     ════════════════════════════════════════════════ -->
-<section id="cv">
-  <div class="section-label">CV</div>
-
-  <div class="cv-grid">
-    <h3>Performance Art</h3>
-    <ul class="cv-list">
-      <li>
-        <span class="year">2025</span>
-        <span>
-          <span class="title">Abundance</span>
-          <span class="desc">First selection, Arte Laguna Prize — 20th Edition, Venice</span>
-        </span>
-      </li>
-      <li>
-        <span class="year">2024 →</span>
-        <span>Mentorship in performance art under visual artist Sofia Stavrakakis</span>
-      </li>
-    </ul>
-  </div>
-
-  <div class="cv-grid">
-    <h3>Selected Film &amp; Television</h3>
-    <ul class="cv-list">
-      <li>
-        <span class="year">2022</span>
-        <span>
-          <span class="title">Rise</span>
-          <span class="desc">dir. Akin Omotoso — Walt Disney Pictures / Disney+</span>
-        </span>
-      </li>
-      <li>
-        <span class="year">2019</span>
-        <span>
-          <span class="title">I Will Cross Tomorrow</span>
-          <span class="desc">dir. Sepideh Farsi — GR / FR / LU / NL</span>
-        </span>
-      </li>
-      <li>
-        <span class="year">2015</span>
-        <span>
-          <span class="title">Interruption</span>
-          <span class="desc">dir. Yorgos Zois</span>
-        </span>
-      </li>
-    </ul>
-  </div>
-
-  <div class="cv-grid">
-    <h3>Background</h3>
-    <ul class="cv-list">
-      <li>
-        <span class="year">—</span>
-        <span>BSc Computer Engineering</span>
-      </li>
-      <li>
-        <span class="year">—</span>
-        <span>Officer, Hellenic Air Force</span>
-      </li>
-      <li>
-        <span class="year">2014 →</span>
-        <span>Acting practice and seminars</span>
-      </li>
-    </ul>
+  <div style="margin-top: 2.5rem;">
+    <a href="news.html" class="hero-scroll">
+      All news
+      <span class="arrow">→</span>
+    </a>
   </div>
 </section>
 
 </main>
 
-<!-- ════════════════════════════════════════════════
-     CONTACT
-     ════════════════════════════════════════════════ -->
-<section id="contact">
-  <div class="section-label section-label--light">Contact</div>
-  <h2>For exhibitions, commissions, <em>and conversation.</em></h2>
-
-  <div class="contact-grid">
-    <div class="contact-item">
-      <div class="label">Email</div>
-      <a href="mailto:hello@example.com">hello@example.com</a>
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__contacts">
+      <a href="https://instagram.com/" class="site-footer__icon" aria-label="Instagram" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+      </a>
+      <a href="mailto:hello@example.com" class="site-footer__icon" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+      </a>
     </div>
-    <div class="contact-item">
-      <div class="label">Based in</div>
-      <span class="value">Athens, Greece</span>
-    </div>
-    <div class="contact-item">
-      <div class="label">Profile</div>
-      <a href="https://artelaguna.world/artist/mylonas-alexandros/" target="_blank" rel="noopener">Arte Laguna World</a>
-    </div>
-    <div class="contact-item">
-      <div class="label">Documentation</div>
-      <a href="https://artelaguna.world/performance/abundance.109470/" target="_blank" rel="noopener">Abundance — full record</a>
-    </div>
+    <div class="site-footer__meta">© Alexandros Mylonas — Athens</div>
+    <div class="site-footer__credit">All work and images.</div>
   </div>
-</section>
-
-<footer>
-  <div>© Alexandros Mylonas — All work and images.</div>
-  <div>Athens · MMXXV</div>
 </footer>
 
 </body>
