@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Abundance — Alexandros Mylonas</title>
+<meta name="description" content="Abundance (2025) — performance work by Alexandros Mylonas examining mass consumption, identity, and entropy." />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,700;1,9..144,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../style.css">
+
+</head>
+<body>
+
+<main class="work-detail">
+
+<!-- ════════════════════════════════════════════════
+     PAGE HEADER — title only (no hero image)
+     Η ίδια φωτογραφία εμφανιζόταν και πιο κάτω στο gallery,
+     οπότε αφαιρέθηκε από εδώ. Αν θες πίσω hero εικόνα,
+     βάλε ξανά μια <section class="work-detail__hero empty"> με <img>.
+     ════════════════════════════════════════════════ -->
+<section class="page-hero">
+  <div class="page-hero__inner">
+    <a href="../works.html" class="page-hero__back"><span class="arrow">←</span> All works</a>
+    <div class="section-label">2025 · Performance · 40–45 min</div>
+    <h1>
+      Abundance
+      <span class="greek">Αφθονία</span>
+    </h1>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     BODY
+     ════════════════════════════════════════════════ -->
+<div class="work-detail__body" style="padding-top: 4rem;">
+
+  <!-- Short opening sentence -->
+  <p class="work-pullquote work-pullquote--opening">
+    In a ceaseless race for evolution and domination, the modern human becomes a vessel for the discarded.
+  </p>
+
+  <!-- 1-2 short paragraphs -->
+  <div class="work-description">
+    <p>
+      <em>Abundance</em> examines how mass consumption corrodes not only our environments but the contours of identity itself. Through performance, sculpture, and ritual, it dwells on the moment where 'more' ceases to mean prosperity and begins to mean saturation.
+    </p>
+    <p>
+      The work explores the fragile equilibrium between individuality and the collective structures that contain it — a meditation on physical and emotional overload, on depersonalisation under the weight of excess.
+    </p>
+  </div>
+
+  <!-- Festival / Presented at -->
+  <div class="work-festival">
+    <span class="label">Presented at</span>
+    <a class="value" href="https://artelagunaprize.com/first-selection-2025/" target="_blank" rel="noopener">
+      Arte Laguna Prize, 20th Edition — Venice, 2025 <span class="arrow">↗</span>
+    </a>
+  </div>
+
+  <!-- ════════════════════════════════════════════════
+       GALLERY — 2 or 3 images
+       ════════════════════════════════════════════════
+       Ανέβασε στο /images/: abundance-01.jpg, abundance-02.jpg
+       (προαιρετικά και abundance-03.jpg)
+       Αν έχεις μόνο 2 φωτογραφίες, σβήσε ολόκληρο το τρίτο <figure>
+  -->
+  <div class="work-gallery work-gallery--simple">
+    <figure class="empty">
+      <img src="../abundance/01.jpg" alt="Abundance — scene 1" onerror="this.style.display='none'">
+    </figure>
+    <figure class="empty">
+      <!-- Παλιό abundance-02.jpg ήταν 168x299 — υπερβολικά μικρό. Αντικαταστάθηκε με υψηλότερης ανάλυσης. -->
+      <img src="../abundance/02.jpg" alt="Abundance — scene 2" onerror="this.style.display='none'">
+    </figure>
+    <figure class="empty">
+      <img src="../abundance/03.jpg" alt="Abundance — scene 3" onerror="this.style.display='none'">
+    </figure>
+  </div>
+
+  <!-- ════════════════════════════════════════════════
+       VIDEO (optional)
+       ════════════════════════════════════════════════
+       Επιλογή Α (Vimeo/YouTube embed):
+         Vimeo:    https://player.vimeo.com/video/VIDEO_ID
+         YouTube:  https://www.youtube.com/embed/VIDEO_ID
+
+       Επιλογή Β (αρχείο .mp4): δες σχόλιο παρακάτω
+
+       Αν δεν θες video, σβήσε ολόκληρο το <div class="work-video">
+  -->
+  <!-- <div class="work-video empty">
+    <div class="work-video__placeholder">
+      <span class="label">Video</span>
+      <span class="hint">Vimeo or YouTube embed — see comment in HTML</span>
+    </div>
+
+    <!-- Όταν είσαι έτοιμος, σβήσε το placeholder από πάνω και "βγάλε" από το σχόλιο το παρακάτω: -->
+    <!--
+    <iframe
+      src="https://player.vimeo.com/video/VIDEO_ID"
+      frameborder="0"
+      allow="autoplay; fullscreen"
+      allowfullscreen>
+    </iframe>
+    -->
+    <!-- <video controls poster="../images/abundance-hero.jpg">
+      <source src="../images/abundance.mov" type="video/mp4">
+    </video> -->
+
+    <!-- Ή αν έχεις δικό σου mp4:
+    <video controls poster="../images/abundance-hero.jpg">
+      <source src="../images/abundance.mp4" type="video/mp4">
+    </video>
+    -->
+  <!-- </div>  -->
+  <!-- VIDEO -->
+
+  <!-- VIDEO (vertical / phone-recorded) -->
+<!-- VIDEO (vertical / phone-recorded) -->
+<div class="work-video work-video--vertical">
+  <video controls poster="../abundance/video-poster.jpg" preload="none" playsinline>
+    <source src="../abundance/video.mp4" type="video/mp4">
+    Your browser does not support video playback.
+  </video>
+</div>
+
+
+
+</div>
+</main>
+
+<site-footer></site-footer>
+<script src="../footer.js"></script>
+
+</body>
+</html>
