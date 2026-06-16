@@ -491,7 +491,8 @@ section {
   align-items: start;
 }
 
-.about-grid h2 {
+.about-grid h2,
+.about-grid h1 {
   font-family: 'Fraunces', serif;
   font-weight: 300;
   font-size: clamp(2rem, 4vw, 3rem);
