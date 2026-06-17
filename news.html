@@ -38,61 +38,9 @@
 </section>
 
 <section>
-  <div class="news-list">
-    <a href="news/melenikou-arts-festival-2026.html" class="news-item">
-      <div class="news-item__date">19–21 Ιουνίου 2026</div>
-      <div>
-        <h3 class="news-item__title">Melenikou Arts Festival 2026 — Σώματα σε Εκκρεμότητα</h3>
-        <p class="news-item__excerpt">
-          Συμμετοχή στο Melenikou Arts Festival 2026 (3ος Χρόνος) με 8 Performance Art Works σε ένα τριήμερο. Calibra Votanikos &amp; Cube Noir Votanikos, 19–21 Ιουνίου | 20:30.
-        </p>
-      </div>
-      <span class="news-item__link">Read <span class="arrow">→</span></span>
-    </a>
-
-    <a href="#athens-open-art" class="news-item">
-      <div class="news-item__date">11–18 Μαρτίου 2026</div>
-      <div>
-        <h3 class="news-item__title">Athens Open Art</h3>
-        <p class="news-item__excerpt">
-          Ομαδική έκθεση στο Ίδρυμα Μιχάλης Κακογιάννης, Αθήνα. Σύγχρονες εικαστικές τέχνες (ζωγραφική, γλυπτική, φωτογραφία και video art). Ανοιχτά καθημερινά 18:00–22:00.
-        </p>
-      </div>
-      <span class="news-item__link">More <span class="arrow">↓</span></span>
-    </a>
-
-    <a href="#perasmata" class="news-item">
-      <div class="news-item__date">10 Jan 2026</div>
-      <div>
-        <h3 class="news-item__title">Perasmata II</h3>
-        <p class="news-item__excerpt">
-          Τα PERASMATA ΙΙ προσκαλούν το κοινό σε μια ολονύχτια δράση ζωντανών επιτελέσεων που θα αναπτυχθούν σε όλο το εύρος του ιστορικού Ξενοδοχείου Μπάγκειον.
-        </p>
-      </div>
-      <span class="news-item__link">More <span class="arrow">↓</span></span>
-    </a>
-
-    <a href="#earth-body" class="news-item">
-      <div class="news-item__date">4–30 Dec 2025</div>
-      <div>
-        <h3 class="news-item__title">Earth Body</h3>
-        <p class="news-item__excerpt">
-          Η Calibra και το Cube Noir παρουσιάζουν την έκθεση EARTH BODY, ένα εικαστικό εγχείρημα που ερευνά τη σχέση του ανθρώπου με το σώμα του ως υλικό και ως χώρο.
-        </p>
-      </div>
-      <span class="news-item__link">More <span class="arrow">↓</span></span>
-    </a>
-
-    <a href="news/arte-laguna-first-selection.html" class="news-item">
-      <div class="news-item__date">2025</div>
-      <div>
-        <h3 class="news-item__title">First selection — Arte Laguna Prize 2025</h3>
-        <p class="news-item__excerpt">
-          Το έργο performance «Αφθονία» (Abundance) επιλέχθηκε στην πρώτη φάση αξιολόγησης (First Selection) της 20ής έκδοσης του Arte Laguna Prize, ενός διεθνώς αναγνωρισμένου θεσμού σύγχρονης τέχνης με έδρα τη Βενετία. Η επιλογή αυτή εντάσσει το έργο μεταξύ των καλλιτεχνικών προτάσεων που ξεχώρισαν από διεθνείς συμμετοχές και προχώρησαν στη δεύτερη φάση της διαδικασίας αξιολόγησης.
-        </p>
-      </div>
-      <span class="news-item__link">Read <span class="arrow">→</span></span>
-    </a>
+  <!-- Η λίστα γεμίζει αυτόματα από το αρχείο news/news-index.json -->
+  <div class="news-list" id="news-list">
+    <!-- φόρτωση... -->
   </div>
 </section>
 
@@ -225,6 +173,37 @@
 
 <site-footer></site-footer>
 <script src="footer.js"></script>
+
+<script>
+  // ─── Αυτόματη φόρτωση λίστας νέων από news/news-index.json ───────────────
+  fetch('news/news-index.json')
+    .then(function(res) { return res.json(); })
+    .then(function(items) {
+      var list = document.getElementById('news-list');
+      list.innerHTML = '';
+      items.forEach(function(item) {
+        var a = document.createElement('a');
+        a.href = item.href;
+        a.className = 'news-item';
+        // Αν το href ξεκινά με '#' παραμένουμε στη σελίδα, αλλιώς άνοιγμα κανονικά
+        a.innerHTML =
+          '<div class="news-item__date">' + item.date + '</div>' +
+          '<div>' +
+            '<h3 class="news-item__title">' + item.title + '</h3>' +
+            '<p class="news-item__excerpt">' + item.excerpt + '</p>' +
+          '</div>' +
+          '<span class="news-item__link">' + item.linkLabel +
+            ' <span class="arrow">' + item.linkArrow + '</span>' +
+          '</span>';
+        list.appendChild(a);
+      });
+    })
+    .catch(function() {
+      // Fallback: αν αποτύχει το fetch, εμφανίζουμε μήνυμα
+      document.getElementById('news-list').innerHTML =
+        '<p style="opacity:.5;">Αδυναμία φόρτωσης νέων.</p>';
+    });
+</script>
 
 </body>
 </html>
