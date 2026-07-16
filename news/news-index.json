@@ -1,5 +1,10 @@
 [
   {
+<<<<<<< HEAD
+    "date": "19–21 June 2026",
+    "title": "Melenikou Arts Festival 2026 — Bodies in Suspension",
+    "excerpt": "Participation in the Melenikou Arts Festival 2026 (3rd Year) with 8 Performance Art Works over three evenings. Calibra Votanikos & Cube Noir Votanikos, 19–21 June | 20:30.",
+=======
     "date": "4 Ιουλίου 2026",
     "title": "ATHENSHOT Festival — Abudance (Αφθονία)",
     "excerpt": "Η performance «Abudance (Αφθονία)» παρουσιάζεται στο ATHENSHOT Festival, Σάββατο 4 Ιουλίου στις 19:00. Το φεστιβάλ συγκεντρώνει καλλιτέχνες, δημιουργούς και κοινό σε μια γιορτή σύγχρονης τέχνης, φωτογραφίας και performance.",
@@ -11,30 +16,31 @@
     "date": "19–21 Ιουνίου 2026",
     "title": "Melenikou Arts Festival 2026 — Σώματα σε Εκκρεμότητα",
     "excerpt": "Συμμετοχή στο Melenikou Arts Festival 2026 (3ος Χρόνος) με 8 Performance Art Works σε ένα τριήμερο. Calibra Votanikos & Cube Noir Votanikos, 19–21 Ιουνίου | 20:30.",
+>>>>>>> acbe39fc49583b5308ad711f7dde735daa8d0d2b
     "href": "news/melenikou-arts-festival-2026.html",
     "linkLabel": "Read",
     "linkArrow": "→"
   },
   {
-    "date": "11–18 Μαρτίου 2026",
+    "date": "11–18 March 2026",
     "title": "Athens Open Art",
-    "excerpt": "Ομαδική έκθεση στο Ίδρυμα Μιχάλης Κακογιάννης, Αθήνα. Σύγχρονες εικαστικές τέχνες (ζωγραφική, γλυπτική, φωτογραφία και video art). Ανοιχτά καθημερινά 18:00–22:00.",
+    "excerpt": "Group exhibition at the Michael Cacoyannis Foundation, Athens. Contemporary visual arts (painting, sculpture, photography and video art). Open daily 18:00–22:00.",
     "href": "#athens-open-art",
     "linkLabel": "More",
     "linkArrow": "↓"
   },
   {
-    "date": "10 Ιανουαρίου 2026",
+    "date": "10 January 2026",
     "title": "Perasmata II",
-    "excerpt": "Τα PERASMATA ΙΙ προσκαλούν το κοινό σε μια ολονύχτια δράση ζωντανών επιτελέσεων που θα αναπτυχθούν σε όλο το εύρος του ιστορικού Ξενοδοχείου Μπάγκειον.",
+    "excerpt": "PERASMATA II invites the public to an all-night live performance event unfolding throughout the historic Bageion Hotel.",
     "href": "#perasmata",
     "linkLabel": "More",
     "linkArrow": "↓"
   },
   {
-    "date": "4–30 Δεκεμβρίου 2025",
+    "date": "4–30 December 2025",
     "title": "Earth Body",
-    "excerpt": "Η Calibra και το Cube Noir παρουσιάζουν την έκθεση EARTH BODY, ένα εικαστικό εγχείρημα που ερευνά τη σχέση του ανθρώπου με το σώμα του ως υλικό και ως χώρο.",
+    "excerpt": "Calibra and Cube Noir present the EARTH BODY exhibition, an artistic project exploring the relationship between the human being and the body as material and space.",
     "href": "#earth-body",
     "linkLabel": "More",
     "linkArrow": "↓"
@@ -42,7 +48,7 @@
   {
     "date": "2025",
     "title": "First selection — Arte Laguna Prize 2025",
-    "excerpt": "Το έργο performance «Αφθονία» (Abundance) επιλέχθηκε στην πρώτη φάση αξιολόγησης (First Selection) της 20ής έκδοσης του Arte Laguna Prize, ενός διεθνώς αναγνωρισμένου θεσμού σύγχρονης τέχνης με έδρα τη Βενετία.",
+    "excerpt": "The performance work «Abundance» was selected in the First Selection phase of the 20th edition of the Arte Laguna Prize, an internationally recognised contemporary art institution based in Venice.",
     "href": "news/arte-laguna-first-selection.html",
     "linkLabel": "Read",
     "linkArrow": "→"
